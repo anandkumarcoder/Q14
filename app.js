@@ -14,6 +14,11 @@ let objectTwo = {
 
 function comparison (){
     if(objectOne.age > objectTwo){
-        console.log(`${objectOne.name} age is ${objectOne.age} which is more than ${objectOne.name}`)
+        console.log(`${objectOne.name} age is ${objectOne.age} which is more than ${objectTwo.name}`)
+
+    } else {
+        console.log(`${objectTwo.name} age is ${objectTwo.age} which is more than ${objectOne.name}`)
     }
 }
+
+button.addEventListener('click', comparison)
