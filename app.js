@@ -1,4 +1,5 @@
 const button = document.querySelector(".btn");
+const output = document.querySelector(".output");
 
 let objectOne = {
     name: "Ram",
@@ -14,10 +15,10 @@ let objectTwo = {
 
 function comparison (){
     if(objectOne.age > objectTwo){
-        console.log(`${objectOne.name} age is ${objectOne.age} which is more than ${objectTwo.name}`)
+        output.innerText =`${objectOne.name} age is ${objectOne.age} which is more than ${objectTwo.name}'s age`
 
     } else {
-        console.log(`${objectTwo.name} age is ${objectTwo.age} which is more than ${objectOne.name}`)
+        output.innerText =`${objectTwo.name} age is ${objectTwo.age} which is more than ${objectOne.name}'s age`
     }
 }
 
